@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: translateY(20px);
+    animation: slideIn 0.8s forwards;
+}
+
+.mission, .vision {
+    width: 45%;
+}
+
+.team {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    opacity: 1;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+    animation-delay: 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    color: #666;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+   

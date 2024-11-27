@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #444;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #ff9900;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e68a00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.categories, .featured-products {
+    padding: 20px;
+}
+
+.category-list, .product-list {
+    display: flex;
+    gap: 20px;
+}
+
+.category, .product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.category:hover, .product:hover {
+    transform: scale(1.05);
+    background-color: #eaeaea;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
