@@ -2,10 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 header {
-    background-color: #333;
+    background-color: black;
     color: white;
     padding: 15px;
     display: flex;
@@ -15,12 +16,13 @@ header {
 }
 
 header:hover {
-    background-color: #444;
+    background-color:black;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.logo img {
+    margin:-40px -10px;
+    height: 120px;
+    width: 120px;
 }
 
 .search-bar {
@@ -29,24 +31,33 @@ header:hover {
 }
 
 .search-bar input {
-    padding: 8px;
-    font-size: 16px;
-    padding: 2px;
-    border: 1px solid #ddd;
-    border-radius: 3%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 8px;
+        flex: 1;
+        font-size: 16px;
+        background-color: #eaeaea;
+        border-radius: 10px;
+    
 }
 
 .search-bar button {
-    padding: 8px 15px;
-    background-color: #ff9900;
+    background-color: black;
+    color: #ff9900;
     border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
     cursor: pointer;
+    box-shadow: 1px 1px 3px #eaeaea;
     transition: background-color 0.3s ease;
-    border-radius: 3%;
 }
 
+
+
 .search-bar button:hover {
-    background-color: #e68a00;
+    color: white;
+    border: none;
 }
 
 nav ul {
@@ -57,18 +68,22 @@ nav ul {
 
 nav ul li {
     display: inline;
+
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 20px;
 }
 
 .hero {
-    background-color: #f4f4f4;
-    padding: 40px;
     text-align: center;
     animation: fadeIn 1s ease-in;
+}
+.hero img{
+    width: 100%;
+    height: 7cm;
 }
 
 @keyframes fadeIn {
@@ -76,41 +91,50 @@ nav ul li a {
     to { opacity: 1; }
 }
 
-.categories, .featured-products {
+.categories, .featured-products h2 {
     padding: 20px;
+    color: white;
 }
 
 .category-list, .product-list {
     display: flex;
     gap: 20px;
+    color: whitesmoke;
 }
 
 .category, .product {
-    border: 0px solid #ddd;
     padding: 15px;
     width: 200px;
     text-align: center;
     transition: transform 0.2s;
     cursor: pointer;
+    
 }
 .category img{
     width: 200px;
     height: 130px;
     display: flex;
     border-radius: 5%;
+    box-shadow: 8px 8px 10px #333;
 }
 .product img{
     width: 200px;
     height: 130px;
     display: flex;
     border-radius: 5%;
+    box-shadow: 8px 8px 10px #333;
+
 }
 
 .category:hover, .product:hover {
     transform: scale(1.05);
-    background-color: #eaeaea;
     border-radius: 5%;
+    color: white;
 }
+.category img:hover, .product img:hover {
+    box-shadow: 3px 4px 7px #eaeaea;
+}
+
 
 footer {
     background-color: #333;

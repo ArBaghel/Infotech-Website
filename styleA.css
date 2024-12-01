@@ -39,6 +39,7 @@ header p {
 
 .mission, .vision {
     width: 45%;
+    text-align: center;
 }
 
 .team {
