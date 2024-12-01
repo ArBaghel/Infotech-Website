@@ -25,12 +25,15 @@ header:hover {
 
 .search-bar {
     display: flex;
+   
 }
 
 .search-bar input {
     padding: 8px;
     font-size: 16px;
+    padding: 2px;
     border: 1px solid #ddd;
+    border-radius: 3%;
 }
 
 .search-bar button {
@@ -39,6 +42,7 @@ header:hover {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 3%;
 }
 
 .search-bar button:hover {
@@ -82,17 +86,30 @@ nav ul li a {
 }
 
 .category, .product {
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     padding: 15px;
-    width: 180px;
+    width: 200px;
     text-align: center;
     transition: transform 0.2s;
     cursor: pointer;
+}
+.category img{
+    width: 200px;
+    height: 130px;
+    display: flex;
+    border-radius: 5%;
+}
+.product img{
+    width: 200px;
+    height: 130px;
+    display: flex;
+    border-radius: 5%;
 }
 
 .category:hover, .product:hover {
     transform: scale(1.05);
     background-color: #eaeaea;
+    border-radius: 5%;
 }
 
 footer {
