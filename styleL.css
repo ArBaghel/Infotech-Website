@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,10 +14,10 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color:black;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px wheat;
     transition: transform 0.3s ease;
     animation: fadeIn 0.5s ease; /* Fade-in animation */
 }
@@ -34,7 +34,7 @@ body {
 h2 {
     margin-bottom: 1.5rem;
     text-align: center;
-    color: #333;
+    color:#fff;
 }
 
 .input-group {
@@ -44,36 +44,40 @@ h2 {
 label {
     margin-bottom: 0.5rem;
     display: block;
-    color: #555;
+    color: #fff;
 }
 
 input {
     padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ff9900;
+    border-radius: 10px;
     width: 100%;
+    box-shadow: 2px 2px 3px wheat;
     transition: border-color 0.3s ease;
     animation: slideIn 0.5s ease; /* Slide-in animation for inputs */
 }
 
 input:focus {
-    border-color: #007bff;
+    border-color: #ff9900;
     outline: none;
 }
 
 button {
     padding: 0.75rem;
-    background-color: #007bff;
+    background-color: black;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 45%;
     cursor: pointer;
+    width: 80px;
+    box-shadow: 1px 1px 3px #eaeaea;;
+    margin-left:68px ;
     transition: background-color 0.3s ease;
     animation: bounce 0.5s ease; /* Bounce animation for button */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ff9900;
 }
 
 .options {
@@ -82,13 +86,16 @@ button:hover {
 }
 
 .options a {
-    color: #007bff;
+    color: #ff9900;
     text-decoration: none;
     transition: color 0.3s ease;
 }
+.options p{
+    color:#fff;
+}
 
 .options a:hover {
-    color: #0056b3;
+    color: wheat;
 }
 
 /* Keyframe Animations */
@@ -145,7 +152,7 @@ button:hover {
     color: #fff;
 } 
 .icons ion-icon{
-    color:blue;
+    color:white;
     font-size: 30px;
     padding-left: 10px;
     padding-top: 5px;
